@@ -20,15 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from z2_plus device
 $(call inherit-product, device/leeco/x2/device.mk)
 
-# Inherit some common AOSP stuff.
-TARGET_ARCH := arm64
-TARGET_DENSITY := xxxhdpi
-TARGET_BOOT_ANIMATION_RES := 1440
-$(call inherit-product, vendor/aosp/common.mk)
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/bootleggers/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_x2
+PRODUCT_NAME := bootleg_x2
 PRODUCT_DEVICE := x2
 PRODUCT_MANUFACTURER := LeEco
 PRODUCT_BRAND := LeEco
