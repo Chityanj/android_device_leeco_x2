@@ -14,8 +14,8 @@
 
 $(call inherit-product, device/lenovo/A6020/full_A6020.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product-if-exists, vendor/aosp/common.mk)
+# Inherit some common CarbonROM stuff.
+$(call inherit-product-if-exists, vendor/carbon/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -23,6 +23,6 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := A6020
-PRODUCT_NAME := aosp_A6020
+PRODUCT_NAME := carbon_A6020
 
 TARGET_UNOFFICIAL_BUILD_ID := HYPER
